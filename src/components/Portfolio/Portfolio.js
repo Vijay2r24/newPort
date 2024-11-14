@@ -28,6 +28,8 @@ import DA from '../../assets/images/DA-Application.png';
 import OneClick from '../../assets/images/oneClick.png';
 import Imly from '../../assets/images/Imly.jpg';
 import NimboBill from '../../assets/images/Nimbibill.png';
+import NimboBill2 from '../../assets/images/nimbo_2.png';
+import OneClick2 from '../../assets/images/Oneclick2.png';
 import Smt from '../../assets/images/smt.png';
 const Portfolio = () => {
   useEffect(() => {
@@ -522,7 +524,7 @@ const Portfolio = () => {
               <span className="text-white mt-1 mr-3 flex-shrink-0 text-sm md:text-base">
                 <GoArrowRight />
               </span>
-              Developed Imly Studio, an ERP platform for interior designers to manage orders, payments, and clients.
+              Developed Interior Design System, an ERP platform for interior designers to manage orders, payments, and clients.
             </p>
             <p className="text-white flex items-start mb-4" data-aos="fade-left" data-aos-delay="200">
               <span className="text-white mt-1 mr-3 flex-shrink-0 text-sm md:text-base">
@@ -563,55 +565,102 @@ const Portfolio = () => {
             </p>
           </div>
           <div className="port_img w-full md:w-1/2 h-64 md:h-full">
-            <img
+            {/* <img
               src={OneClick}
               alt="E-Commerce"
               className="storyimg transition-transform duration-300 ease-in-out hover:translate-y-5 w-full h-full rounded-lg object-cover"
+            /> */}
+             <Swiper
+          modules={[Autoplay]} // Add the Autoplay module
+          spaceBetween={0}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 2000, // Faster scrolling
+            disableOnInteraction: false,
+          }}
+        >
+          <SwiperSlide>
+            <img
+              src={OneClick}
+              alt="CMS"
+              className="storyimg transition-transform duration-300 ease-in-out hover:translate-y-5 w-full h-full object-cover rounded-lg"
             />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={OneClick2}
+              alt="CMS"
+              className="storyimg transition-transform duration-300 ease-in-out hover:translate-y-5 w-full h-full object-cover rounded-lg"
+            />
+          </SwiperSlide>
+        </Swiper>
           </div>
         </div>
         <div className="cardSection flex flex-col-reverse md:flex-row-reverse bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="100">
-          <div className="port_img w-full md:w-1/2 h-64 md:h-full">
+      <div className="port_img w-full md:w-1/2 h-64 md:h-full">
+        <Swiper
+          modules={[Autoplay]} // Add the Autoplay module
+          spaceBetween={0}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 2000, // Faster scrolling
+            disableOnInteraction: false,
+          }}
+        >
+          <SwiperSlide>
             <img
               src={NimboBill}
               alt="CMS"
               className="storyimg transition-transform duration-300 ease-in-out hover:translate-y-5 w-full h-full object-cover rounded-lg"
-            // onClick={handleImageClick} // Handle click to open link
             />
-          </div>
-          <div className="portText w-full md:w-1/2 p-4">
-            <h1 className="headding text-2xl font-bold text-white mb-4" data-aos="fade-right">Nimboo Bill                        
-            </h1>
-            <div className="flex flex-wrap justify-center gap-2 mb-6">
-              <span className="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200 hover:text-gray-800 transition-colors duration-300 w-auto">
-              Flutter
-              </span>
-              <span className="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200 hover:text-gray-800 transition-colors duration-300 w-auto">
-              Angular
-              </span>
-              <span className="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200 hover:text-gray-800 transition-colors duration-300 w-auto">
-              NET Core                                                                                              
-              </span>
-              <span className="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200 hover:text-gray-800 transition-colors duration-300 w-auto">
-              SQL Server                                                                                              
-              </span>
-              <span className="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200 hover:text-gray-800 transition-colors duration-300 w-auto">
-              Docker                                                                                               
-              </span>
-            </div>
-            <p className="text-white flex items-start mb-4" data-aos="fade-left" data-aos-delay="200">
-              <span className="text-white mt-1 mr-3 flex-shrink-0 text-sm md:text-base">
-                <GoArrowRight />
-              </span>
-              Developed NembooBill, a smart POS billing app for restaurants that provides real-time financial insights, revenue tracking, and expense monitoring
-            </p>
-            <p className="text-white flex items-start mb-4" data-aos="fade-left" data-aos-delay="200">
-              <span className="text-white mt-1 mr-3 flex-shrink-0 text-sm md:text-base">
-                <GoArrowRight />
-              </span>
-              Available on Android, iOS, and Windows with offline support and sync functionality.</p>
-          </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={NimboBill2}
+              alt="CMS"
+              className="storyimg transition-transform duration-300 ease-in-out hover:translate-y-5 w-full h-full object-cover rounded-lg"
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
+      <div className="portText w-full md:w-1/2 p-4">
+        <h1 className="headding text-2xl font-bold text-white mb-4" data-aos="fade-right">
+          Nimboo Bill
+        </h1>
+        <div className="flex flex-wrap justify-center gap-2 mb-6">
+          <span className="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200 hover:text-gray-800 transition-colors duration-300 w-auto">
+            Flutter
+          </span>
+          <span className="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200 hover:text-gray-800 transition-colors duration-300 w-auto">
+            Angular
+          </span>
+          <span className="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200 hover:text-gray-800 transition-colors duration-300 w-auto">
+            NET Core
+          </span>
+          <span className="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200 hover:text-gray-800 transition-colors duration-300 w-auto">
+            SQL Server
+          </span>
+          <span className="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200 hover:text-gray-800 transition-colors duration-300 w-auto">
+            Docker
+          </span>
         </div>
+        <p className="text-white flex items-start mb-4" data-aos="fade-left" data-aos-delay="200">
+          <span className="text-white mt-1 mr-3 flex-shrink-0 text-sm md:text-base">
+            <GoArrowRight />
+          </span>
+          Developed NimbooBill, a smart POS billing app for restaurants that provides real-time financial insights, revenue tracking, and expense monitoring
+        </p>
+        <p className="text-white flex items-start mb-4" data-aos="fade-left" data-aos-delay="200">
+          <span className="text-white mt-1 mr-3 flex-shrink-0 text-sm md:text-base">
+            <GoArrowRight />
+          </span>
+          Available on Android, iOS, and Windows with offline support and sync functionality.
+        </p>
+      </div>
+    </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 p-6">
           {services.map((service, index) => {
             const isWhiteBg = service.bgColor === '#FFFF'; // Check if the background color is white
